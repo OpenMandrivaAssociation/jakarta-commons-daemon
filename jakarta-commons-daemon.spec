@@ -12,7 +12,7 @@
 
 Name:           %{name}
 Version:        1.0.1
-Release:        %mkrel 4.2
+Release:        %mkrel 4.3
 Epoch:          1
 Summary:        Jakarta Commons Daemon Package
 License:        Apache License
