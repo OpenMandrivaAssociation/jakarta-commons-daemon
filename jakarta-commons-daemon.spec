@@ -12,7 +12,7 @@
 
 Name:           %{name}
 Version:        1.0.1
-Release:        %mkrel 4.3
+Release:        %mkrel 4.4
 Epoch:          1
 Summary:        Jakarta Commons Daemon Package
 License:        Apache License
@@ -28,8 +28,6 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:  java-devel
 %else
 %if %{gcj_support}
-Requires(post): java-gcj-compat
-Requires(postun): java-gcj-compat
 BuildRequires:  java-gcj-compat-devel
 %else
 Buildarch:      noarch
