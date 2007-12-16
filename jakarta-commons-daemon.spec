@@ -12,7 +12,7 @@
 
 Name:           %{name}
 Version:        1.0.1
-Release:        %mkrel 4.4
+Release:        %mkrel 4.5
 Epoch:          1
 Summary:        Jakarta Commons Daemon Package
 License:        Apache License
@@ -34,7 +34,7 @@ Buildarch:      noarch
 %endif
 BuildRequires:  ant, java-javadoc
 %endif
-BuildRequires:  jpackage-utils >= 0:1.5
+BuildRequires:  java-rpmbuild >= 0:1.5
 Provides:       %{short_name}
 Obsoletes:      %{short_name}
 
