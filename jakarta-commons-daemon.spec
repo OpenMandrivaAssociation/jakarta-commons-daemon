@@ -22,7 +22,6 @@ Group:          Development/Java
 URL:            http://jakarta.apache.org/commons/daemon/
 Source0:        http://www.apache.org/dist/jakarta/commons/daemon/source/daemon-%{version}.tar.bz2
 Patch:          %{name}-crosslink.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %if %{native}
 BuildRequires:  java-devel
