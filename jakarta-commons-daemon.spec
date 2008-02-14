@@ -17,6 +17,7 @@ Epoch:          1
 Summary:        Jakarta Commons Daemon Package
 License:        Apache License
 Group:          Development/Java
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 #Vendor:         JPackage Project
 #Distribution:   JPackage
 URL:            http://jakarta.apache.org/commons/daemon/
