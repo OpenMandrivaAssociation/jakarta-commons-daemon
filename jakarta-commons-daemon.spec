@@ -15,6 +15,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:            http://jakarta.apache.org/commons/daemon/
 Source0:        http://www.apache.org/dist/jakarta/commons/daemon/source/daemon-%{version}.tar.bz2
 Patch0:          %{name}-crosslink.patch
+Patch1:		 daemon-1.0.1-asneeded.patch
 
 %if %{gcj_support}
 BuildRequires:  java-gcj-compat-devel
@@ -54,6 +55,7 @@ Javadoc for %{name}.
 %prep
 %setup -q -n %{base_name}-%{version}
 %patch0 -p0
+%patch1 -p1 -b .asneeded
 chmod 644 src/samples/*
 
 
