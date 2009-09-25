@@ -14,7 +14,7 @@ Group:          Development/Java
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:            http://jakarta.apache.org/commons/daemon/
 Source0:        http://www.apache.org/dist/jakarta/commons/daemon/source/daemon-%{version}.tar.bz2
-Patch:          %{name}-crosslink.patch
+Patch0:          %{name}-crosslink.patch
 
 %if %{gcj_support}
 BuildRequires:  java-gcj-compat-devel
