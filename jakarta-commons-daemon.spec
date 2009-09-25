@@ -6,7 +6,7 @@
 
 Name:           %{name}
 Version:        1.0.1
-Release:        %mkrel 7
+Release:        %mkrel 8
 Epoch:          1
 Summary:        Jakarta Commons Daemon Package
 License:        Apache License
@@ -25,6 +25,7 @@ BuildRequires:  ant, java-javadoc
 BuildRequires:  java-rpmbuild >= 0:1.5
 Provides:       %{short_name}
 Obsoletes:      %{short_name}
+ExcludeArch:	%arm %mips
 
 %description
 The scope of this package is to define an API in line with the current
